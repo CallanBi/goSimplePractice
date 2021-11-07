@@ -5,6 +5,7 @@ import (
 
 	"goSimplePractice/forcharacter"
 	"goSimplePractice/package1"
+	"goSimplePractice/returnfunc"
 	"goSimplePractice/runelength"
 	"goSimplePractice/structtest"
 	"goSimplePractice/varargs"
@@ -21,5 +22,9 @@ func main() {
 	varargs.PrintVarArgsUsingEmptyInterface("aaa", 123, "bbb")
 
 	structtest.Test()
+
+	fmt.Print("\n\n返回 defer 的匿名函数练习：\n")
+
+	fmt.Println(returnfunc.DeferReturnFunc())
 
 }
