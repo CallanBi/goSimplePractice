@@ -9,6 +9,9 @@ import (
 	"goSimplePractice/runelength"
 	"goSimplePractice/structtest"
 	"goSimplePractice/varargs"
+
+	"goSimplePractice/coroutine"
+	panic_practice "goSimplePractice/panic"
 )
 
 func main() {
@@ -26,5 +29,9 @@ func main() {
 	fmt.Print("\n\n返回 defer 的匿名函数练习：\n")
 
 	fmt.Println(returnfunc.DeferReturnFunc())
+
+	coroutine.Coroutine()
+
+	panic_practice.PanicPractice()
 
 }
