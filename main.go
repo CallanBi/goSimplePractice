@@ -12,6 +12,8 @@ import (
 
 	"goSimplePractice/coroutine"
 	panic_practice "goSimplePractice/panic"
+	slice_and_arr_practice "goSimplePractice/slice_and_arr"
+	string_practice "goSimplePractice/string"
 )
 
 func main() {
@@ -33,5 +35,9 @@ func main() {
 	coroutine.Coroutine()
 
 	panic_practice.PanicPractice()
+
+	string_practice.StringPractice()
+
+	slice_and_arr_practice.SliceAndArrPractice()
 
 }

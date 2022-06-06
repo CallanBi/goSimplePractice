@@ -2,7 +2,6 @@ package panic_practice
 
 import (
 	"fmt"
-	"runtime/debug"
 )
 
 type MyCustomError struct {
@@ -36,7 +35,7 @@ func PanicPractice() {
 		if err := recover(); err != nil {
 			fmt.Println("err: ", err)
 			fmt.Println("recover from panic")
-			debug.PrintStack()
+			// debug.PrintStack()
 		}
 	}()
 
