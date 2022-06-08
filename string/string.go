@@ -198,4 +198,27 @@ func builderPractice() {
 
 	fmt.Println(i, s, boolVal, f, iVal, u, bs, fs, is, us, q)
 
+	// utf8 字符串截取操作:
+	// 推荐先看 golang 官方博客：https://go.dev/blog/strings 搞清楚 string rune byte
+	sentence1 := `你好⌘，
+	世界`
+	sentence2 := "hello⌘, world"
+
+	sentenceRune1 := []rune(sentence1)
+
+	fmt.Println(len(sentence1), sentence1[1:7])
+	fmt.Println(len(sentenceRune1), sentenceRune1[1:7])
+	fmt.Println(string(sentenceRune1[1:7]))
+
+	// 字符串遍历
+	fmt.Println("length of sentence1: ", len(sentence1))
+	for idx, runeVal := range sentence1 {
+		fmt.Printf("%d: %c\n", idx, runeVal)
+	}
+
+	fmt.Println("length of sentence2: ", len(sentence2))
+	for idx, runeVal := range sentence2 {
+		fmt.Printf("%d: %c\n", idx, runeVal)
+	}
+
 }
