@@ -10,6 +10,7 @@ import (
 	"goSimplePractice/structtest"
 	"goSimplePractice/varargs"
 
+	chan_practice "goSimplePractice/channel"
 	"goSimplePractice/coroutine"
 	panic_practice "goSimplePractice/panic"
 	slice_and_arr_practice "goSimplePractice/slice_and_arr"
@@ -39,5 +40,7 @@ func main() {
 	string_practice.StringPractice()
 
 	slice_and_arr_practice.SliceAndArrPractice()
+
+	chan_practice.ChanPractice()
 
 }
