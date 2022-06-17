@@ -66,6 +66,7 @@ func noCachedPipeline() {
 		// 单向收信道
 		var receiver Receiver = noCachedPipeline
 		num := <-receiver
+		// 只接收但不获取数据可以這樣寫： <-receiver
 		fmt.Println("接收到的数据是： ", num)
 	}()
 
